@@ -1,11 +1,11 @@
 module Person
-    class Juridic
+    class Juridic 
         def initialize(name, cnpj)
-            @name = name 
+            @name = name
             @cnpj = cnpj 
         end
 
-        def add 
+        def add
             puts 'Pessoa Juridica Adicionada'
             puts "Nome: #{@name}"
             puts "CNPJ: #{@cnpj}"
@@ -15,17 +15,22 @@ module Person
     class Physical
         def initialize(name, cpf)
             @name = name
-            @cpf = cpf 
+            @cpf = cpf
         end
-
-        def add 
-            puts 'Pessoa Física Adicionada'
+        
+        def add
+            puts "Pessoa Física adicionada"
             puts "Nome: #{@name}"
             puts "CPF: #{@cpf}"
         end
     end
 end
 
-    Person::Juridic.new('M.C. Investimentos', '4353.432/0021').add
-    puts '--------------------------------'
-    Person::Physical.new('Paulo Vinicius', '432.434.243/02').add
+    Person::Juridic.new('R.C. Investimentos', '2428.2423.243/33').add
+    puts '---------------------------------'
+    Person::Physical.new('Gabriel Rocha', '534.343.222-09').add
+
+
+    
+
+    

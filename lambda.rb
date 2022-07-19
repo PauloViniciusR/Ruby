@@ -28,7 +28,7 @@ my_lambda = lambda do |numbers|
             return if numbers[index] == numbers.last
                 puts "(#{numbers[index]}) * (#{numbers[index + 1]})"
                 puts numbers[index] * numbers[index + 1]
-                index += 1
+                 index += 1
         end
     end
 
